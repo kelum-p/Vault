@@ -25,6 +25,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Linq;
 using Caliburn.Micro;
+using CocoB.Vault.UI.Income;
 
 namespace CocoB.Vault.UI.Framework
 {

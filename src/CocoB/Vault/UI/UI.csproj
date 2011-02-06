@@ -69,7 +69,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ExchangeRates\ExchangeRatesView.xaml.cs">
+      <DependentUpon>ExchangeRatesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangeRates\ExchangeRatesViewModel.cs" />
     <Compile Include="Framework\IShell.cs" />
+    <Compile Include="Income\IncomeView.xaml.cs">
+      <DependentUpon>IncomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Income\IncomeViewModel.cs" />
     <Compile Include="Shell\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -102,6 +110,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="ExchangeRates\ExchangeRatesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Income\IncomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Shell\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

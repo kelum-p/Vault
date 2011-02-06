@@ -7,36 +7,26 @@
  */
 
 using System.ComponentModel.Composition;
-using System.Windows;
 using Caliburn.Micro;
+using CocoB.Vault.UI.ExchangeRates;
 using CocoB.Vault.UI.Framework;
+using CocoB.Vault.UI.Income;
 
 namespace CocoB.Vault.UI.Shell
 {
-    [Export(typeof(IShell))]
-    public class ShellViewModel : PropertyChangedBase, IShell
+    [Export(typeof (IShell))]
+    public class ShellViewModel : Conductor<IScreen>.Collection.OneActive, IShell
     {
-        string _name;
-
-        public string Name
+        protected override void OnInitialize()
         {
-            get { return _name; }
-            set
-            {
-                _name = value;
-                NotifyOfPropertyChange(() => Name);
-                NotifyOfPropertyChange(() => CanSayHello);
-            }
-        }
+            var incomeTab = new IncomeViewModel();
+            var exchangeRateTab = new ExchangeRatesViewModel();
 
-        public bool CanSayHello
-        {
-            get { return !string.IsNullOrWhiteSpace(Name); }
-        }
+            incomeTab.DisplayName = "Income";
+            exchangeRateTab.DisplayName = "Exchange Rates";
 
-        public void SayHello()
-        {
-            MessageBox.Show(string.Format("Hello {0}!", Name)); //Don't do this in real life :)
+            Items.Add(incomeTab);
+            Items.Add(exchangeRateTab);
         }
     }
 }

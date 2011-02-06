@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="A623DCE4-C6E6-4CD2-9E90-725D88CE066B" ModuleId="UI" />
+  <Module PersistentId="Caliburn.Micro, Version=1.0.0.0, Culture=neutral" ModuleId="Caliburn.Micro" />
 </Modules>
