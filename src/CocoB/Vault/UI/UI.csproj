@@ -42,7 +42,11 @@
     <Reference Include="Caliburn.Micro">
       <HintPath>..\..\..\..\lib\Caliburn.Micro.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ComponentModel.Composition.Initialization.Desktop">
+      <HintPath>..\..\..\..\lib\Microsoft.ComponentModel.Composition.Initialization.Desktop.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +69,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Framework\IShell.cs" />
     <Compile Include="Shell\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>

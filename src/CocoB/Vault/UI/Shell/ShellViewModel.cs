@@ -6,12 +6,15 @@
  *
  */
 
+using System.ComponentModel.Composition;
 using System.Windows;
 using Caliburn.Micro;
+using CocoB.Vault.UI.Framework;
 
 namespace CocoB.Vault.UI.Shell
 {
-    public class ShellViewModel : PropertyChangedBase
+    [Export(typeof(IShell))]
+    public class ShellViewModel : PropertyChangedBase, IShell
     {
         string _name;
 
