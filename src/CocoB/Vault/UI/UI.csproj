@@ -69,15 +69,39 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Backend\BackendExtensions.cs" />
+    <Compile Include="Backend\CommandResult.cs" />
+    <Compile Include="Backend\VaultBackend.cs" />
+    <Compile Include="Framework\IBackend.cs" />
+    <Compile Include="Framework\ICommand.cs" />
+    <Compile Include="Framework\IQuery.cs" />
+    <Compile Include="Backend\QueryResult.cs" />
     <Compile Include="ExchangeRates\ExchangeRatesView.xaml.cs">
       <DependentUpon>ExchangeRatesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExchangeRates\ExchangeRatesViewModel.cs" />
     <Compile Include="Framework\IShell.cs" />
-    <Compile Include="Income\IncomeView.xaml.cs">
+    <Compile Include="Income\AccountReport\AccountView.xaml.cs">
+      <DependentUpon>AccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Income\AccountReport\AccountViewModel.cs" />
+    <Compile Include="Income\BankReport\BankView.xaml.cs">
+      <DependentUpon>BankView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Income\FinancialViewModel.cs" />
+    <Compile Include="Income\IncomeReport\IncomeReportView.xaml.cs">
+      <DependentUpon>IncomeReportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Income\IncomeReport\IncomeReportViewModel.cs" />
+    <Compile Include="Income\BankReport\BankViewModel.cs" />
+    <Compile Include="Income\IncomeReport\IncomeView.xaml.cs">
       <DependentUpon>IncomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Income\IncomeViewModel.cs" />
+    <Compile Include="Income\IncomeReport\IncomeViewModel.cs" />
+    <Compile Include="Model\Income\Account.cs" />
+    <Compile Include="Model\Income\Bank.cs" />
+    <Compile Include="Model\Income\Entry.cs" />
+    <Compile Include="Model\Income\IVaultEntity.cs" />
     <Compile Include="Shell\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -114,7 +138,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Income\IncomeView.xaml">
+    <Page Include="Income\AccountReport\AccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Income\BankReport\BankView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Income\IncomeReport\IncomeReportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Income\IncomeReport\IncomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

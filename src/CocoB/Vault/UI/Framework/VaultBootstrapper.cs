@@ -25,6 +25,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Linq;
 using Caliburn.Micro;
+using CocoB.Vault.UI.Backend;
 using CocoB.Vault.UI.Income;
 
 namespace CocoB.Vault.UI.Framework
@@ -43,8 +44,7 @@ namespace CocoB.Vault.UI.Framework
         {
             _container = CompositionHost.Initialize(
              new AggregateCatalog(
-                 AssemblySource.Instance.Select(x => new AssemblyCatalog(x)).OfType<ComposablePartCatalog>()
-                 )
+                 AssemblySource.Instance.Select(x => new AssemblyCatalog(x)).OfType<ComposablePartCatalog>())
              );
 
             var batch = new CompositionBatch();

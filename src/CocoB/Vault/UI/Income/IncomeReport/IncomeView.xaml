@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="CocoB.Vault.UI.Income.IncomeReport.IncomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Income="clr-namespace:CocoB.Vault.UI.Model.Income" 
+             xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" 
+             xmlns:BankReport="clr-namespace:CocoB.Vault.UI.Income.BankReport" 
+             xmlns:AccountReport="clr-namespace:CocoB.Vault.UI.Income.AccountReport" mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <TreeView DockPanel.Dock="Left"
+                      ItemsSource="{Binding Banks}"
+                      x:Name="Tree"
+                      cal:Message.Attach="[Event SelectedItemChanged] = [Action ViewDetails(Tree.SelectedItem)]">
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate DataType="{x:Type BankReport:BankViewModel}"
+                                              ItemsSource="{Binding AccountStubs}">
+                        <TextBlock Text="{Binding Name}" />
+                    </HierarchicalDataTemplate>
+
+                    <DataTemplate DataType="{x:Type AccountReport:AccountViewModel}">
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+
+                </TreeView.Resources>
+            </TreeView>
+            <ContentControl x:Name="ActiveItem" />
+        </DockPanel>
+    </Grid>
+</UserControl>

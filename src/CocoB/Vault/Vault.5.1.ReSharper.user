@@ -3,12 +3,61 @@
     <string />
     <integer />
     <boolean>
-      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="d:Miscellaneous Files/f:IoC.cs/l:J!?Downloads?caliburnmicro-71176d3f737b?caliburnmicro_71176d3f737b?src?Caliburn.Micro.Silverlight?IoC.cs" caret="1093" fromTop="25" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesViewModel.cs" caret="364" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesView.xaml" caret="525" fromTop="8" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="449" fromTop="18" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellView.xaml" caret="550" fromTop="10" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1" fromTop="0" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml.cs" caret="634" fromTop="24" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeViewModel.cs" caret="335" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IBackend.cs" caret="416" fromTop="15" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:ICommand.cs" caret="378" fromTop="12" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IQuery.cs" caret="373" fromTop="12" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IShell.cs" caret="0" fromTop="0" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="664" fromTop="19" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="1114" fromTop="44" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:BackendExtensions.cs" caret="427" fromTop="14" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="453" fromTop="28" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:VaultBootstrapper.cs" caret="2229" fromTop="21" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeViewModel.cs" caret="335" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesView.xaml" caret="525" fromTop="8" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesViewModel.cs" caret="385" fromTop="2" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesViewModel.cs" caret="364" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="824" fromTop="31" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="449" fromTop="18" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1397" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellView.xaml" caret="336" fromTop="5" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1025" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1261" fromTop="20" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="656" fromTop="12" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="876" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml.cs" caret="634" fromTop="24" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="1247" fromTop="48" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="1485" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="1595" fromTop="55" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IBackend.cs" caret="482" fromTop="14" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IBackend.cs" caret="416" fromTop="15" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:ICommand.cs" caret="378" fromTop="12" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IQuery.cs" caret="373" fromTop="12" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="687" fromTop="25" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="1152" fromTop="40" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="714" fromTop="26" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="0" fromTop="0" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="1035" fromTop="43" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:BackendExtensions.cs" caret="427" fromTop="14" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="830" fromTop="38" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="22" fromTop="1" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="250" fromTop="13" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:VaultBootstrapper.cs" caret="2229" fromTop="21" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -21,4 +70,61 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Conductor" priority="1" />
+      <Item value="public" priority="2" />
+      <Item value="ShellViewModel`0" priority="1" />
+      <Item value="ImportingConstructor" priority="1" />
+      <Item value="IWindowManager`0" priority="0" />
+      <Item value="windowManager" priority="0" />
+      <Item value="Screen`0" priority="0" />
+      <Item value="protected" priority="5" />
+      <Item value="override" priority="5" />
+      <Item value="_windowManager" priority="0" />
+      <Item value="new" priority="6" />
+      <Item value="IShell`0" priority="1" />
+      <Item value="HomeViewModel`0" priority="0" />
+      <Item value="ActivateItem`0" priority="0" />
+      <Item value="HomeViewModel" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="Items" priority="3" />
+      <Item value="DisplayName" priority="1" />
+      <Item value="IncomeViewModel`0" priority="2" />
+      <Item value="incomeViewModel" priority="0" />
+      <Item value="ExchangeRatesViewModel`0" priority="2" />
+      <Item value="exchangeRatesViewModel" priority="0" />
+      <Item value="IoC`0" priority="0" />
+      <Item value="batch" priority="1" />
+      <Item value="IncomeViewModel" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="incomeTab" priority="1" />
+      <Item value="exchangeRateTab" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="IBackend`0" priority="2" />
+      <Item value="Import" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="_backend" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Caliburn.Micro.IWindowManager">
+      <Item value="ShowWindow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Caliburn.Micro.IObservableCollection`1">
+      <Item value="Add`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Caliburn.Micro.IoC">
+      <Item value="Get`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.Composition.Hosting.CompositionBatch">
+      <Item value="AddExport`0" priority="0" />
+      <Item value="AddExportedValue`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CocoB.Vault.UI.Income.IncomeViewModel">
+      <Item value="DisplayName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CocoB.Vault.UI.ExchangeRates.ExchangeRatesViewModel">
+      <Item value="Deactivated" priority="0" />
+      <Item value="DisplayName" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>
