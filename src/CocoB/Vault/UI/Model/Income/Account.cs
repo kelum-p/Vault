@@ -10,7 +10,7 @@ using System;
 
 namespace CocoB.Vault.UI.Model.Income
 {
-    public class Account : IVaultEntity
+    public class Account
     {
         #region Member Variables
 
@@ -27,15 +27,6 @@ namespace CocoB.Vault.UI.Model.Income
         #endregion
 
         #region Methods
-
-        #endregion
-
-        #region Implementation of IVaultEntity
-
-        public object CreateViewModel()
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
     }

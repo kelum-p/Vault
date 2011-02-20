@@ -13,7 +13,7 @@ using System.Text;
 
 namespace CocoB.Vault.UI.Model.Income
 {
-    public class Entry : IVaultEntity
+    public class Entry
     {
         #region Member Variables
         #endregion
@@ -35,13 +35,5 @@ namespace CocoB.Vault.UI.Model.Income
         #region Methods
         #endregion
 
-        #region Implementation of IVaultEntity
-
-        public object CreateViewModel()
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
     }
 }

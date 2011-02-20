@@ -20,6 +20,8 @@ namespace CocoB.Vault.UI.Income.BankReport
         public BankViewModel()
         {
             AccountStubs = new ObservableCollection<AccountViewModel>();
+
+            Currencies = new[] { "CAD", "US" };
         }
 
         #endregion
@@ -28,9 +30,9 @@ namespace CocoB.Vault.UI.Income.BankReport
 
         public Bank BankModel { get; set; }
 
-        public AccountViewModel CurrentAccountStub { get; set; }
-
         public ICollection<AccountViewModel> AccountStubs { get; private set; }
+
+        public string[] Currencies { get; set; }
 
         #endregion
 
@@ -42,7 +44,6 @@ namespace CocoB.Vault.UI.Income.BankReport
 
             Name = BankModel.Name;
             Balance = BankModel.Balance;
-
         }
 
         protected override void OnActivate()
@@ -52,11 +53,6 @@ namespace CocoB.Vault.UI.Income.BankReport
             {
                 Balance += accountViewModel.Balance;
             }
-        }
-
-        public void ShowAccountReport()
-        {
-            
         }
 
         #endregion

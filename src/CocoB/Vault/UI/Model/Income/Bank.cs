@@ -12,7 +12,7 @@ using CocoB.Vault.UI.Income.BankReport;
 
 namespace CocoB.Vault.UI.Model.Income
 {
-    public class Bank : IVaultEntity
+    public class Bank
     {
         #region Member Variables
 
@@ -41,17 +41,6 @@ namespace CocoB.Vault.UI.Model.Income
 
         #endregion
 
-        #region Implementation of IVaultEntity
 
-        #endregion
-
-        #region Implementation of IVaultEntity
-
-        public object CreateViewModel()
-        {
-            return new BankViewModel();
-        }
-
-        #endregion
     }
 }

@@ -6,6 +6,7 @@
  *
  */
 
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.Composition;
@@ -17,7 +18,7 @@ using CocoB.Vault.UI.Model.Income;
 namespace CocoB.Vault.UI.Income.IncomeReport
 {
     [Export(typeof(IncomeViewModel))]
-    public class IncomeViewModel : Conductor<object>
+    public class IncomeViewModel : Conductor<object>, IHandle<AccountViewModel>
     {
         #region Variables
 
@@ -30,6 +31,7 @@ namespace CocoB.Vault.UI.Income.IncomeReport
         {
             _incomeReportViewModel = incomeReportViewModel;
             Banks = new ObservableCollection<BankViewModel>();
+
         }
 
         #region Properties
@@ -45,7 +47,7 @@ namespace CocoB.Vault.UI.Income.IncomeReport
             DisplayName = "Income";
             ActivateItem(_incomeReportViewModel);
 
-            var bankViewModel = new BankViewModel
+            var bankViewModel = new BankViewModel()
                        {
                            Name = "Cock Muncher"
                        };
@@ -59,13 +61,18 @@ namespace CocoB.Vault.UI.Income.IncomeReport
             bankViewModel.AccountStubs.Add(new AccountViewModel
             {
                 Name = "Account 1",
-                Balance = 1000
+                Balance = 1000,
+                Currency = "CAD",
+                MaturityDate = DateTime.Now
             });
 
             bankViewModel.AccountStubs.Add(new AccountViewModel
             {
                 Name = "Account 2",
-                Balance = 1500
+                Balance = 1500,
+                Currency = "US",
+                MaturityDate = DateTime.Now
+                
             });
 
             Banks.Add(bankViewModel);
@@ -74,6 +81,19 @@ namespace CocoB.Vault.UI.Income.IncomeReport
         public void ViewDetails(object item)
         {
             ActivateItem(item);
+        }
+
+        #endregion
+
+        #region Implementation of IHandle<in AccountViewModel>
+
+        /// <summary>
+        /// Handles the message.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        public void Handle(AccountViewModel message)
+        {
+            ActivateItem(message);
         }
 
         #endregion

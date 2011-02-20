@@ -6,6 +6,8 @@
  *
  */
 
+using System;
+
 namespace CocoB.Vault.UI.Income.AccountReport
 {
     public class AccountViewModel : FinancialViewModel
@@ -20,6 +22,7 @@ namespace CocoB.Vault.UI.Income.AccountReport
 
         #region Properties
 
+        public DateTime MaturityDate { get; set; }
 
         #endregion
 

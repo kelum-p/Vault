@@ -3,20 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro" mc:Ignorable="d" 
+             mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            
+
             <TextBlock x:Name="Name"
                        Grid.Column="0"
                        HorizontalAlignment="Left"/>
@@ -25,29 +25,39 @@
                        HorizontalAlignment="Right"/>
         </Grid>
 
-        <ListView ItemsSource="{Binding AccountStubs}"
+        <DataGrid ItemsSource="{Binding AccountStubs}"
                   Grid.Row="1"
-                  cal:Bind.Model="{Binding}"
-                  HorizontalContentAlignment="Stretch"
-                  SelectedItem="{Binding CurrentAccountStub}"
-                  cal:Message.Attach="[Event SelectionChanged] = [Action ShowAccountReport]">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Account"
+                                    Binding="{Binding Name}"
+                                    Width="*"
+                                    IsReadOnly="True"/>
+                
+                <DataGridTextColumn Header="Date of Maturity"
+                                    Binding="{Binding MaturityDate, StringFormat=D}" />
+                
+                <DataGridTemplateColumn Header="Currency"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Currency}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
 
-                        <TextBlock x:Name="Name"
-                                   Grid.Column="0" 
-                                   HorizontalAlignment="Left" />
-                        <TextBlock x:Name="Balance"
-                                   Grid.Column="1"
-                                   HorizontalAlignment="Right"/>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <ComboBox SelectedValue="{Binding Currency}"
+                                      ItemsSource="{Binding Path=DataContext.Currencies, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Balance"
+                                    Binding="{Binding Balance}"
+                                    IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>

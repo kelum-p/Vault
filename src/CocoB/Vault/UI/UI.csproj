@@ -101,7 +101,6 @@
     <Compile Include="Model\Income\Account.cs" />
     <Compile Include="Model\Income\Bank.cs" />
     <Compile Include="Model\Income\Entry.cs" />
-    <Compile Include="Model\Income\IVaultEntity.cs" />
     <Compile Include="Shell\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>

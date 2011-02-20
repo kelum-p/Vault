@@ -26,6 +26,8 @@ namespace CocoB.Vault.UI.Income
 
         public long Balance { get; set; }
 
+        public string Currency { get; set; }
+
         #endregion
 
         #region Methods
