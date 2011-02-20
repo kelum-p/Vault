@@ -17,11 +17,13 @@
                 <TreeView.Resources>
                     <HierarchicalDataTemplate DataType="{x:Type BankReport:BankViewModel}"
                                               ItemsSource="{Binding AccountStubs}">
-                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding Name}"
+                                   cal:Message.Attach="[Event MouseLeftButtonDown] = [Action ViewDetails(Tree.SelectedItem)]"/>
                     </HierarchicalDataTemplate>
 
                     <DataTemplate DataType="{x:Type AccountReport:AccountViewModel}">
-                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text="{Binding Name}"
+                                   cal:Message.Attach="[Event MouseLeftButtonDown] = [Action ViewDetails(Tree.SelectedItem)]"/>
                     </DataTemplate>
 
                 </TreeView.Resources>

@@ -8,6 +8,7 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Caliburn.Micro;
 using CocoB.Vault.UI.Income.AccountReport;
 using CocoB.Vault.UI.Model.Income;
 
@@ -19,7 +20,7 @@ namespace CocoB.Vault.UI.Income.BankReport
 
         public BankViewModel()
         {
-            AccountStubs = new ObservableCollection<AccountViewModel>();
+            AccountStubs = new BindableCollection<AccountViewModel>();
 
             Currencies = new[] { "CAD", "US" };
         }

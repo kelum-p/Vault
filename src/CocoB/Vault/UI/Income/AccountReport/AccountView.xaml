@@ -6,6 +6,36 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <TextBlock x:Name="Name" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock x:Name="Name" 
+                       Grid.Column="0"/>
+            <TextBlock x:Name="Balance"
+                       Grid.Column="1"/>
+        </Grid>
+
+        <DataGrid ItemsSource="{Binding EntryStubs}"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Date"
+                                    Binding="{Binding Date, StringFormat=D}"
+                                    Width="*"/>
+
+                <DataGridTextColumn Header="Amount"
+                                    Binding="{Binding Amount}"
+                                    IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </UserControl>

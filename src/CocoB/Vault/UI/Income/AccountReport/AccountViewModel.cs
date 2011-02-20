@@ -7,6 +7,8 @@
  */
 
 using System;
+using System.Collections.Generic;
+using Caliburn.Micro;
 
 namespace CocoB.Vault.UI.Income.AccountReport
 {
@@ -18,11 +20,18 @@ namespace CocoB.Vault.UI.Income.AccountReport
 
         #region Constructors
 
+        public AccountViewModel()
+        {
+            EntryStubs = new BindableCollection<EntryStubViewModel>();
+        }
+
         #endregion
 
         #region Properties
 
         public DateTime MaturityDate { get; set; }
+
+        public ICollection<EntryStubViewModel> EntryStubs { get; private set; }
 
         #endregion
 

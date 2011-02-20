@@ -30,7 +30,7 @@ namespace CocoB.Vault.UI.Income.IncomeReport
         public IncomeViewModel(IncomeReportViewModel incomeReportViewModel)
         {
             _incomeReportViewModel = incomeReportViewModel;
-            Banks = new ObservableCollection<BankViewModel>();
+            Banks = new BindableCollection<BankViewModel>();
 
         }
 
@@ -45,7 +45,6 @@ namespace CocoB.Vault.UI.Income.IncomeReport
         protected override void OnInitialize()
         {
             DisplayName = "Income";
-            ActivateItem(_incomeReportViewModel);
 
             var bankViewModel = new BankViewModel()
                        {
@@ -58,24 +57,47 @@ namespace CocoB.Vault.UI.Income.IncomeReport
                 Balance = 10000000000
             };
 
-            bankViewModel.AccountStubs.Add(new AccountViewModel
+
+            var account1 = new AccountViewModel
+                           {
+                               Name = "Account 1",
+                               Balance = 1000,
+                               Currency = "CAD",
+                               MaturityDate = DateTime.Now
+                           };
+
+            account1.EntryStubs.Add(new EntryStubViewModel
+                                    {
+                                        Date = DateTime.Now,
+                                        Amount = 500
+                                    });
+
+            bankViewModel.AccountStubs.Add(account1);
+
+
+            var account2 = new AccountViewModel
+                           {
+                               Name = "Account 2",
+                               Balance = 1500,
+                               Currency = "US",
+                               MaturityDate = DateTime.Now
+                           };
+
+            account2.EntryStubs.Add(new EntryStubViewModel
             {
-                Name = "Account 1",
-                Balance = 1000,
-                Currency = "CAD",
-                MaturityDate = DateTime.Now
+                Date = DateTime.Now,
+                Amount = 100000000
             });
 
-            bankViewModel.AccountStubs.Add(new AccountViewModel
-            {
-                Name = "Account 2",
-                Balance = 1500,
-                Currency = "US",
-                MaturityDate = DateTime.Now
-                
-            });
+            bankViewModel.AccountStubs.Add(account2);
 
             Banks.Add(bankViewModel);
+        }
+
+        protected override void OnActivate()
+        {
+            base.OnActivate();
+            ActivateItem(_incomeReportViewModel);
         }
 
         public void ViewDetails(object item)
