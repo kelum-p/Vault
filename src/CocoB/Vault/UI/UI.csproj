@@ -86,6 +86,10 @@
     </Compile>
     <Compile Include="Income\AccountReport\AccountViewModel.cs" />
     <Compile Include="Income\AccountReport\EntryStubViewModel.cs" />
+    <Compile Include="Income\BankReport\AddAccountView.xaml.cs">
+      <DependentUpon>AddAccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Income\BankReport\AddAccountViewModel.cs" />
     <Compile Include="Income\BankReport\BankView.xaml.cs">
       <DependentUpon>BankView.xaml</DependentUpon>
     </Compile>
@@ -139,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Income\AccountReport\AccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Income\BankReport\AddAccountView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -3,19 +3,15 @@
     <string />
     <integer />
     <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
       <setting name="SolutionAnalysisEnabled">True</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="d:Miscellaneous Files/f:IoC.cs/l:J!?Downloads?caliburnmicro-71176d3f737b?caliburnmicro_71176d3f737b?src?Caliburn.Micro.Silverlight?IoC.cs" caret="1093" fromTop="25" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesViewModel.cs" caret="364" fromTop="16" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesView.xaml" caret="525" fromTop="8" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="449" fromTop="18" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellView.xaml" caret="550" fromTop="10" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1" fromTop="0" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml.cs" caret="634" fromTop="24" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeViewModel.cs" caret="335" fromTop="16" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IBackend.cs" caret="416" fromTop="15" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:ICommand.cs" caret="378" fromTop="12" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IQuery.cs" caret="373" fromTop="12" />
@@ -24,39 +20,57 @@
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="1114" fromTop="44" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:BackendExtensions.cs" caret="427" fromTop="14" />
       <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="453" fromTop="28" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:VaultBootstrapper.cs" caret="2229" fromTop="21" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeReportView.xaml.cs" caret="59" fromTop="2" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="524" fromTop="22" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/f:App.xaml" caret="647" fromTop="14" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeView.xaml.cs" caret="56" fromTop="2" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml.cs" caret="62" fromTop="2" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountView.xaml.cs" caret="328" fromTop="15" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Model/d:Income/f:Account.cs" caret="467" fromTop="30" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Model/d:Income/f:Bank.cs" caret="786" fromTop="38" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Model/d:Income/f:Entry.cs" caret="623" fromTop="24" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:VaultBootstrapper.cs" caret="2143" fromTop="9" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:FinancialViewModel.cs" caret="192" fromTop="11" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankViewModel.cs" caret="539" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeReportViewModel.cs" caret="0" fromTop="0" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:EntryStubViewModel.cs" caret="430" fromTop="25" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountViewModel.cs" caret="511" fromTop="24" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountView.xaml" caret="1428" fromTop="27" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="2607" fromTop="39" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="470" fromTop="7" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeView.xaml" caret="2011" fromTop="34" />
     </RecentFiles>
     <RecentEdits>
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeViewModel.cs" caret="335" fromTop="16" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesView.xaml" caret="525" fromTop="8" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesViewModel.cs" caret="385" fromTop="2" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:ExchangeRates/f:ExchangeRatesViewModel.cs" caret="364" fromTop="16" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="824" fromTop="31" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellViewModel.cs" caret="449" fromTop="18" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1397" fromTop="16" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Shell/f:ShellView.xaml" caret="336" fromTop="5" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1025" fromTop="16" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="1261" fromTop="20" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="656" fromTop="12" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml" caret="876" fromTop="16" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/f:IncomeView.xaml.cs" caret="634" fromTop="24" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="1247" fromTop="48" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="1485" fromTop="16" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="1595" fromTop="55" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IBackend.cs" caret="482" fromTop="14" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IBackend.cs" caret="416" fromTop="15" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:ICommand.cs" caret="378" fromTop="12" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:IQuery.cs" caret="373" fromTop="12" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="687" fromTop="25" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:QueryResult.cs" caret="1152" fromTop="40" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="714" fromTop="26" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="0" fromTop="0" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:CommandResult.cs" caret="1035" fromTop="43" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:BackendExtensions.cs" caret="427" fromTop="14" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="830" fromTop="38" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="22" fromTop="1" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Backend/f:VaultBackend.cs" caret="250" fromTop="13" />
-      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Framework/f:VaultBootstrapper.cs" caret="2229" fromTop="21" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="2776" fromTop="48" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="2125" fromTop="35" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="1292" fromTop="21" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="2459" fromTop="48" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1065" fromTop="6" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankViewModel.cs" caret="856" fromTop="27" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="389" fromTop="5" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankView.xaml" caret="1687" fromTop="26" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1228" fromTop="27" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1228" fromTop="35" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountView.xaml" caret="1092" fromTop="19" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:EntryStubViewModel.cs" caret="553" fromTop="28" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountViewModel.cs" caret="720" fromTop="27" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountViewModel.cs" caret="526" fromTop="24" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:BankReport/f:BankViewModel.cs" caret="539" fromTop="16" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="931" fromTop="32" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:EntryStubViewModel.cs" caret="222" fromTop="10" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:EntryStubViewModel.cs" caret="470" fromTop="26" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountView.xaml" caret="1355" fromTop="25" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:AccountReport/f:AccountView.xaml" caret="1480" fromTop="28" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1228" fromTop="25" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1228" fromTop="39" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1228" fromTop="32" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="3014" fromTop="22" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="2911" fromTop="14" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="2911" fromTop="5" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="3014" fromTop="10" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeViewModel.cs" caret="1228" fromTop="0" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeView.xaml" caret="1757" fromTop="25" />
+      <File id="A623DCE4-C6E6-4CD2-9E90-725D88CE066B/d:Income/d:IncomeReport/f:IncomeView.xaml" caret="1432" fromTop="20" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -73,21 +87,21 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="Conductor" priority="1" />
-      <Item value="public" priority="2" />
+      <Item value="public" priority="14" />
       <Item value="ShellViewModel`0" priority="1" />
       <Item value="ImportingConstructor" priority="1" />
       <Item value="IWindowManager`0" priority="0" />
       <Item value="windowManager" priority="0" />
       <Item value="Screen`0" priority="0" />
-      <Item value="protected" priority="5" />
-      <Item value="override" priority="5" />
+      <Item value="protected" priority="8" />
+      <Item value="override" priority="8" />
       <Item value="_windowManager" priority="0" />
-      <Item value="new" priority="6" />
+      <Item value="new" priority="12" />
       <Item value="IShell`0" priority="1" />
       <Item value="HomeViewModel`0" priority="0" />
-      <Item value="ActivateItem`0" priority="0" />
+      <Item value="ActivateItem`0" priority="1" />
       <Item value="HomeViewModel" priority="0" />
-      <Item value="void" priority="0" />
+      <Item value="void" priority="1" />
       <Item value="Items" priority="3" />
       <Item value="DisplayName" priority="1" />
       <Item value="IncomeViewModel`0" priority="2" />
@@ -95,9 +109,9 @@
       <Item value="ExchangeRatesViewModel`0" priority="2" />
       <Item value="exchangeRatesViewModel" priority="0" />
       <Item value="IoC`0" priority="0" />
-      <Item value="batch" priority="1" />
+      <Item value="batch" priority="2" />
       <Item value="IncomeViewModel" priority="0" />
-      <Item value="var" priority="0" />
+      <Item value="var" priority="1" />
       <Item value="incomeTab" priority="1" />
       <Item value="exchangeRateTab" priority="1" />
       <Item value="private" priority="0" />
@@ -105,6 +119,41 @@
       <Item value="Import" priority="0" />
       <Item value="typeof" priority="0" />
       <Item value="_backend" priority="0" />
+      <Item value="BankViewModel`0" priority="0" />
+      <Item value="AccountStubs" priority="2" />
+      <Item value="IObservableCollection" priority="0" />
+      <Item value="AccountStubViewModel`0" priority="0" />
+      <Item value="Bank`0" priority="0" />
+      <Item value="Name" priority="3" />
+      <Item value="BankModel" priority="4" />
+      <Item value="Balance" priority="4" />
+      <Item value="Bank" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="FinancialEntity`0" priority="0" />
+      <Item value="AccountViewModel" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="accountViewModel" priority="0" />
+      <Item value="IHandle`0" priority="0" />
+      <Item value="Account`0" priority="0" />
+      <Item value="EventAggregator`0" priority="0" />
+      <Item value="eventAggregator" priority="1" />
+      <Item value="_eventAggregator" priority="2" />
+      <Item value="AccountViewModel`0" priority="2" />
+      <Item value="CurrentAccountStub" priority="2" />
+      <Item value="message" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="NotifyOfPropertyChange`1" priority="0" />
+      <Item value="Currency" priority="1" />
+      <Item value="MatuarityDate" priority="1" />
+      <Item value="DateTime`0" priority="2" />
+      <Item value="EntryStubs" priority="0" />
+      <Item value="EntryStub`0" priority="0" />
+      <Item value="long" priority="0" />
+      <Item value="account1" priority="1" />
+      <Item value="EntryStubViewModel" priority="0" />
+      <Item value="Date" priority="0" />
+      <Item value="Amount" priority="0" />
+      <Item value="account2" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Caliburn.Micro.IWindowManager">
       <Item value="ShowWindow`0" priority="0" />
@@ -125,6 +174,27 @@
     <ItemStatistics item="Qualified:CocoB.Vault.UI.ExchangeRates.ExchangeRatesViewModel">
       <Item value="Deactivated" priority="0" />
       <Item value="DisplayName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CocoB.Vault.UI.Model.Income.Bank">
+      <Item value="Name" priority="1" />
+      <Item value="Balance" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CocoB.Vault.UI.Income.AccountReport.AccountViewModel">
+      <Item value="Balance" priority="0" />
+      <Item value="EntryStubs" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Caliburn.Micro.EventAggregator">
+      <Item value="Subscribe`0" priority="0" />
+      <Item value="Publish`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TreeView">
+      <Item value="MouseLeftButtonDown" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="2" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

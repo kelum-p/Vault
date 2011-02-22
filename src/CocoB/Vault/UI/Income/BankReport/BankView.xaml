@@ -9,6 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
@@ -28,7 +29,8 @@
         <DataGrid ItemsSource="{Binding AccountStubs}"
                   Grid.Row="1"
                   AutoGenerateColumns="False"
-                  CanUserAddRows="False">
+                  CanUserAddRows="False"
+                  SelectedItem="{Binding CurrentAccounStub}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Account"
                                     Binding="{Binding Name}"
@@ -59,5 +61,16 @@
                                     IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
+        <ToolBar Grid.Row="2">
+            <Button x:Name="AddAccount" 
+                    Content="Add Account " />
+            <Separator />
+            <Button x:Name="RemoveAccount" 
+                    Content="Remove Account"  />
+            <Separator />
+            <Button x:Name="EditAccount" 
+                    Content="Edit Account" />
+        </ToolBar>
+
     </Grid>
 </UserControl>

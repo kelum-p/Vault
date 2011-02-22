@@ -46,10 +46,8 @@ namespace CocoB.Vault.UI.Income.IncomeReport
         {
             DisplayName = "Income";
 
-            var bankViewModel = new BankViewModel()
-                       {
-                           Name = "Cock Muncher"
-                       };
+            var bankViewModel = IoC.Get<BankViewModel>();
+            bankViewModel.Name = "Cock Muncher";
 
             bankViewModel.BankModel = new Bank
             {
@@ -57,39 +55,42 @@ namespace CocoB.Vault.UI.Income.IncomeReport
                 Balance = 10000000000
             };
 
-
-            var account1 = new AccountViewModel
-                           {
-                               Name = "Account 1",
-                               Balance = 1000,
-                               Currency = "CAD",
-                               MaturityDate = DateTime.Now
-                           };
-
-            account1.EntryStubs.Add(new EntryStubViewModel
-                                    {
-                                        Date = DateTime.Now,
-                                        Amount = 500
-                                    });
-
-            bankViewModel.AccountStubs.Add(account1);
-
-
-            var account2 = new AccountViewModel
-                           {
-                               Name = "Account 2",
-                               Balance = 1500,
-                               Currency = "US",
-                               MaturityDate = DateTime.Now
-                           };
-
-            account2.EntryStubs.Add(new EntryStubViewModel
+            for (int i = 0; i < 10; i++)
             {
-                Date = DateTime.Now,
-                Amount = 100000000
-            });
+                var account1 = new AccountViewModel
+                {
+                    Name = "Account 1",
+                    Balance = 1000,
+                    Currency = "CAD",
+                    MaturityDate = DateTime.Now
+                };
 
-            bankViewModel.AccountStubs.Add(account2);
+                account1.EntryStubs.Add(new EntryStubViewModel
+                {
+                    Date = DateTime.Now,
+                    Amount = 500
+                });
+
+                bankViewModel.AccountStubs.Add(account1);
+
+
+                var account2 = new AccountViewModel
+                {
+                    Name = "Account 2",
+                    Balance = 1500,
+                    Currency = "US",
+                    MaturityDate = DateTime.Now
+                };
+
+                account2.EntryStubs.Add(new EntryStubViewModel
+                {
+                    Date = DateTime.Now,
+                    Amount = 100000000
+                });
+
+                bankViewModel.AccountStubs.Add(account2);
+            }
+           
 
             Banks.Add(bankViewModel);
         }

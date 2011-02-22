@@ -8,10 +8,14 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using Caliburn.Micro;
 
 namespace CocoB.Vault.UI.Income.AccountReport
 {
+    [PartCreationPolicy(CreationPolicy.NonShared)]
+    [Export(typeof (AccountViewModel))]
+    [Export(typeof (FinancialViewModel))]
     public class AccountViewModel : FinancialViewModel
     {
         #region Member Variables
@@ -33,9 +37,31 @@ namespace CocoB.Vault.UI.Income.AccountReport
 
         public ICollection<EntryStubViewModel> EntryStubs { get; private set; }
 
+        public bool CanRemoveEntry
+        {
+            get { return false; }
+        }
+
+        public bool CanEditEntry
+        {
+            get { return false; }
+        }
+
         #endregion
 
         #region Methods
+
+        public void AddEntry()
+        {
+        }
+
+        public void RemoveEntry()
+        {
+        }
+
+        public void EditEntry()
+        {
+        }
 
         #endregion
     }

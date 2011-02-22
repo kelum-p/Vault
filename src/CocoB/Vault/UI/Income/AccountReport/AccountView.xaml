@@ -9,6 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
         <Grid Grid.Row="0">
@@ -37,5 +38,16 @@
                                     IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
+
+        <ToolBar Grid.Row="2">
+            <Button x:Name="AddEntry" 
+                    Content="Add Entry " />
+            <Separator />
+            <Button x:Name="RemoveEntry" 
+                    Content="Remove Entry"  />
+            <Separator />
+            <Button x:Name="EditEntry" 
+                    Content="Edit Entry" />
+        </ToolBar>
     </Grid>
 </UserControl>

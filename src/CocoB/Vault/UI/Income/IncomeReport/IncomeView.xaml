@@ -10,6 +10,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <DockPanel LastChildFill="True">
+            
             <TreeView DockPanel.Dock="Left"
                       ItemsSource="{Binding Banks}"
                       x:Name="Tree"
